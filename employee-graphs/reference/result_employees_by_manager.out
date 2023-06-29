@@ -1,0 +1,15 @@
+a1 a2 a3 a4 a5 a6 a7 a81 a83 a85 a87 a89 a93 a95 a97 
+
+a1 a2-a1 a6-a2 a7-a2 a3-a1 a4-a1 a83-a4 a81-a83 a89-a83 a93-a83 a95-a83 a97-a83 a87-a4 a5-a1 
+a1 a2 a3 a4 a5 a6 a7 a81 a83 a87 a89 a93 a95 a97 
+a5 
+a0 a5 
+a0 a5 a81 a83 a89 a93 a95 a97 
+a0 a1 a2 a3 a4 a5 a6 a7 a81 a83 a87 a89 a93 a95 a97 
+
+a1 a2 a3 a4 a6 a7 a87 
+a1 a2-a1 a6-a2 a7-a2 a99-a2 a87-a99 a3-a1 a4-a1 27-a4 a0-a4 bogdan-a1 
+27 a0 a1 a2 a3 a4 a6 a7 a87 a99 bogdan 
+a2 a6 a7 a87 a99 
+27 a0 a4 
+a87 a99 

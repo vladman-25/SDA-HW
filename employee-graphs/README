@@ -1,0 +1,49 @@
+MAN ANDREI VLAD 311 CD
+
+1.HIRE
+- aloc nodul + campurile name si team
+- in caz ca nu e primul nod din ierarhie se cauta managerul recursiv
+si se adauga angajatul la acesta
+2.FIRE
+- am implementat functia find_by_name care cauta recursiv un nod 
+dupa numele dat ca parametru
+- in cazul contrar exceptiilor, se scoate angajatul de la managerul sau
+iar apoi toti angajatii acestuia trec la manager
+3.PROMOTE
+- prin functiile fire si hire mut angajatul cu un rand mai sus
+4.MOVE EMPLOYEE
+- prin fct fire si hire mut angajatul la noul manager
+5.MOVE TEAM
+- scot de la managerul actual angajatul
+- mut anagajatrul sub noul manager cu tot cu echipa sa
+6.FIRE TEAM
+- scot anagajtul de la managerul sau si apelez fct destroy_tree
+pt a scapa de toata echipa
+7.EMPLOYEES BY MANAGER
+- folosesc un nou nod pt a stoca angajatii ce urmeaza sa fie afisati
+in ordine alfabetica, asemanator implementarii hire
+- resursiv adaug toti angajatii
+8.EMPLOYEES BY LEVEL
+- fct node_level intoarce nivelul pe care se afla un angajat 
+- folosesc aceeasi idee pt stocare ca la 7.
+- fct aux_gebl fct in felul urmator: daca un angajat este pe
+un nivel mai mic decat cel cerut, se apeleaza recursiv iar pt anagjati
+daca se afla pe acelasi nivel se adauga in nodul auxiliar
+9.BEST MANAGER
+- caut recursiv prin toti angajatii nr maxim de angajati
+- folosesc ideea de la 7 pt stocare
+- daca nr este mai mare decat maximul, se reseteaza nodul auxiliar
+- daca nr este egal cu maximul, se adauga in nodul auxiliar
+10.REORGANIZE
+- parcurg arborele de la noul manager catre varf, scot fiecare anagajat
+de la managerul de mai sus si ii stochez intr un vector
+- adaug la fiecare element din vector anagajatul de pe pozitia urmatoare
+- setez pt fiecare noul manager
+
+PREORDER
+- se apeleaza recursiv pt toti anagajatii, daca acesta nu are manager
+adica este primul nod din ierarhie, este afisat simplu, altfel se afiseaza
+cu legatura cu managerul
+
+DESTROY 
+- se apeleaza recursiv iar apoi se elibereaza memoria pt fiecare nod 
